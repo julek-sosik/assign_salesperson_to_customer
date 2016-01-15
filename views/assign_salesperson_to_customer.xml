@@ -27,6 +27,19 @@
                 view_type="form"
                 view_id="assign_salesperson_to_customer_form"
         />
+		
+		<act_window name="Ustaw nowego sprzedawce"
+                res_model="lsi_crm.mass_set_user_id"
+                src_model="crm.lead"
+                view_mode="form"
+                multi="True"
+                target="new"
+                key2="client_action_multi"
+                id="mass_set_user_id_act"
+                context="{}"
+                view_type="form"
+                view_id="lsi_crm.mass_set_user_id_form"
+        />
 
     </data>
 </openerp>
